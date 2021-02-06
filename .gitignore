@@ -1,2 +1,4 @@
 # Project exclude paths
 /target/
+/HomeTask(ITMO).iml
+/.idea/
