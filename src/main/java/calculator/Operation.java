@@ -8,15 +8,11 @@ public class Operation {
     private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     public int inputNum(){
         String input = "";
-        try {
-            input = reader.readLine();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
         int result = 0;
         try {
+            input = reader.readLine();
             result = Integer.parseInt(input);
-        }catch (IllegalArgumentException e){
+        } catch (IOException | IllegalArgumentException e) {
             System.out.println("Wrong data!");
         }
         return result;
